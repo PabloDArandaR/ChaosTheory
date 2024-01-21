@@ -2,7 +2,7 @@ import py_attractor.model as model
 import numpy as np
 
 class aizawaAttractor (model.model):
-    def __init__(self, initial_state: np.array, dt: float, a, b, c, d, e, f):
+    def __init__(self, initial_state: np.array, dt: float, a: float, b: float, c: float, d: float, e: float, f: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -37,7 +37,7 @@ class aizawaAttractor (model.model):
 
 
 class chenLeeAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, a, b, d):
+    def __init__(self, initial_state: np.array, dt: float, a: float, b: float, d: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -69,7 +69,7 @@ class chenLeeAttractor(model.model):
 
 
 class rosslerAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, a, b, c):
+    def __init__(self, initial_state: np.array, dt: float, a: float, b: float, c: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -101,7 +101,7 @@ class rosslerAttractor(model.model):
 
 
 class arneodoAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, a, b, c):
+    def __init__(self, initial_state: np.array, dt: float, a: float, b: float, c: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -133,7 +133,7 @@ class arneodoAttractor(model.model):
 
 
 class sprottBAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, a, b, c):
+    def __init__(self, initial_state: np.array, dt: float, a: float, b: float, c: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -165,7 +165,7 @@ class sprottBAttractor(model.model):
 
 
 class sprottLinzFAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, a):
+    def __init__(self, initial_state: np.array, dt: float, a: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -195,7 +195,7 @@ class sprottLinzFAttractor(model.model):
 
 
 class dadrasAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, p, o, r, c, e):
+    def __init__(self, initial_state: np.array, dt: float, p: float, o: float, r: float, c: float, e: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
@@ -229,7 +229,7 @@ class dadrasAttractor(model.model):
 
 
 class halvorsenAttractor(model.model):
-    def __init__(self, initial_state: np.array, dt: float, a):
+    def __init__(self, initial_state: np.array, dt: float, a: float):
         self.n_dim = 3
         self.x = initial_state[0]
         self.y = initial_state[1]
